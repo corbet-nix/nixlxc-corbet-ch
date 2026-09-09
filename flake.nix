@@ -27,7 +27,7 @@
   # flake dependency -- only the `probeFact`/`collectProbes` MECHANISM itself is consumed rather
   # than vendored.
   inputs.nixhost = {
-    url = "github:julian-corbet/nixhost-corbet-ch";
+    url = "git+https://github.com/julian-corbet/nixhost-corbet-ch";
     inputs.nixpkgs.follows = "nixpkgs";
   };
 
