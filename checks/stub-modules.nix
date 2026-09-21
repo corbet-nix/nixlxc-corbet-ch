@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # checks/stub-modules.nix
 #
 # Tiny, self-contained stand-in modules -- NOT the real nixstorage/nixiam/nixhost -- declaring

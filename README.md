@@ -5,8 +5,8 @@ definitions as data — where WHAT a container receives is named, never restated
 or a raw number.**
 
 `nixlxc` is the LXC container substrate in a small family of workload-substrate repos: a peer
-of [nixk3s](https://github.com/julian-corbet/nixk3s-corbet-ch) (bare metal running k3s),
-[nixvm](https://github.com/julian-corbet/nixvm-corbet-ch) (bare metal running VMs), and
+of [nixk3s](https://github.com/corbet-nix/nixk3s-corbet-ch) (bare metal running k3s),
+[nixvm](https://github.com/corbet-nix/nixvm-corbet-ch) (bare metal running VMs), and
 `nixpods` (bare metal running podman). A host declares which containers stand on it, what each
 one is made of, and what it receives; none of the four substrates owns another.
 
@@ -123,6 +123,6 @@ left as folklore -- an immutable selector that makes adoption and replacement di
 probe merge that silently produces an invalid object, and device majors that no amount of
 declaring can stabilise.
 
-## License
+## Licence
 
-[MIT License](LICENSE) &copy; 2026 Julian Corbet
+Outbound licence is `MIT OR Apache-2.0`. See `LICENSE-MIT` and `LICENSE-APACHE`; every source file carries `SPDX-License-Identifier: MIT OR Apache-2.0`.

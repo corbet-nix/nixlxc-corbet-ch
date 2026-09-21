@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # The smallest NixOS configuration that lets `nixlxc.host` + `nixlxc.containers` be evaluated
 # as part of a real system. Nothing here names a real host, path, or identity -- every value is
 # generic (`examplebr0`-style placeholders throughout), the same convention nixvm's own

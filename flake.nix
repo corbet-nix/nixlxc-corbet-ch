@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 {
   description = "A declarative home for LXC container workloads on NixOS -- an LXC host stance plus container definitions as data, where WHAT a container receives (storage categories, a uid/gid identity) is named, never restated as a host path or a raw number. The peer of nixk3s (bare metal running k3s), nixvm (bare metal running VMs) and nixpods (bare metal running podman): nixlxc is bare metal running LXC containers, and none of the four owns another.";
 
@@ -14,7 +15,7 @@
   # deliberately avoided here, even though nixstorage's own checks DO pull in nixiam that way.
   #
   # nixhost IS an input, for exactly one thing: `lib.probeFact`/`lib.collectProbes`
-  # (github:julian-corbet/nixhost-corbet-ch, `lib/facts.nix`) -- the shared, plain-function fix for
+  # (github:corbet-nix/nixhost-corbet-ch, `lib/facts.nix`) -- the shared, plain-function fix for
   # the cross-namespace defensive-read defect class this module's own `nixstorageCategoriesProbe`/
   # `nixiamPosixProbe`/`nixhostEnvironmentsProbe` all lean on (see nixhost's own `lib/facts.nix`
   # header). One recipe, not a second copy -- the same fix nixvault/nixnas apply to their own
@@ -27,7 +28,7 @@
   # flake dependency -- only the `probeFact`/`collectProbes` MECHANISM itself is consumed rather
   # than vendored.
   inputs.nixhost = {
-    url = "git+https://github.com/julian-corbet/nixhost-corbet-ch";
+    url = "git+https://github.com/corbet-nix/nixhost-corbet-ch";
     inputs.nixpkgs.follows = "nixpkgs";
   };
 

@@ -93,7 +93,7 @@ supported state: an older version of this file gated its "nixstorage declared?" 
 `options ? nixstorage && options.nixstorage ? delivery && …`, an options-tree walk that reported
 "not imported" for a rename too — the wrong message, pointing a fix at the wrong place.
 
-`lib.probeFact` (vendored from [nixhost](https://github.com/julian-corbet/nixhost-corbet-ch)'s own
+`lib.probeFact` (vendored from [nixhost](https://github.com/corbet-nix/nixhost-corbet-ch)'s own
 `lib/facts.nix` — the canonical copy, and its own header carries the full defect-class writeup)
 fixes this by probing the sibling's top-level namespace separately from the leaf this module
 actually reads. A renamed leaf now surfaces as a `config.warnings` entry naming the option path,

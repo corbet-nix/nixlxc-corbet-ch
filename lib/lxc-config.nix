@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # lib/lxc-config.nix
 #
 # Pure rendering: a container's facts -- identity (name, arch, rootfsPath, initCmd), storage

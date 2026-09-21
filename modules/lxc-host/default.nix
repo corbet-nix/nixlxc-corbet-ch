@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # modules/lxc-host/default.nix
 #
 # ONE declarative LXC stance per host: liblxc enabled, `lxcpath` (where every container's own

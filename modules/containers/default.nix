@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
 # modules/containers/default.nix
 #
 # Container DEFINITIONS, as data: `nixlxc.containers.<name>` names what a container is made of
